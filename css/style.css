@@ -258,13 +258,6 @@
    width: 45%;
 }
 
-/* .slider-box {
-   display: flex;
-   align-items: flex-start;
-   justify-content: center;
-   gap: 20px;
-} */
-
 .section-content {
    height: 100%;
    flex-direction: column;
@@ -399,7 +392,6 @@
    font-weight: 500;
    font-size: 15px;
    line-height: 135%;
-   /* or 20px */
 
    color: #5a5a5a;
 }
@@ -476,7 +468,6 @@
 .slider-item {
    width: 35%;
    font-family: "Muller", san-serif;
-   /* transform: translate(150%); */
 }
 
 .swiper-slide {
