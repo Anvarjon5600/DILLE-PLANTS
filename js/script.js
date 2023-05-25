@@ -15,22 +15,27 @@ var swiper = new Swiper(".my-swiper", {
    },
 });
 
+// !JS
+// let menuBtn = document.querySelector('.menu-burger__img')
+// let xBtn = document.querySelector('.x-btn')
+// let content = document.querySelector('.burger-content')
 
-// ".active-menu" class qo'shiladi
-// ".burger-content" class qoshilishi kere bo'lgan element
-
-let menuBtn = document.querySelector('.menu-burger__img')
-let xBtn = document.querySelector('.x-btn')
-let content = document.querySelector('.burger-content')
-
-menuBtn.addEventListener('click', () => {
-   content.classList.add('active-menu')
-})
-
-xBtn.addEventListener('click', () => {
-   content.classList.remove('active-menu')
-})
-
-// $('.menu-burger__img').click(function () {
-//    $('..burger-content').css('display', 'block')
+// menuBtn.addEventListener('click', () => {
+//    content.classList.add('active-menu')
 // })
+
+// xBtn.addEventListener('click', () => {
+//    content.classList.remove('active-menu')
+// })
+
+
+// !Jquery
+$('.menu-burger__img').click(function () {
+   console.log("ishladi")
+   $('.burger-content').addClass('active-menu');
+})
+
+$('.x-btn').click(function () {
+   console.log('remove ishladi')
+   $('.burger-content').removeClass('active-menu');
+})
